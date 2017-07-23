@@ -1,5 +1,7 @@
 # spring-rest-seed
 
+[![Build Status](https://travis-ci.org/donovanmuller/spring-rest-seed.svg?branch=master)](https://travis-ci.org/donovanmuller/spring-rest-seed)
+
 This project contains A Spring Boot REST Service.
 
 ## Development
