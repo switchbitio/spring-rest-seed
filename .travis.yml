@@ -12,6 +12,8 @@ env:
   - secure: donovanmuller
   - secure: yoWucChgYfmQwYpYkMqP
   - MAVEN_BASE_URL=https://atomist.jfrog.io/atomist
+  - secure: TQLkBBR/RbhvTkJoykF7ko2wpWloiTOCB8nGEudlLMpQymO4SFzWpR4hQnjnNQiDQRd3nCwS78SwQXRIOadQ9ZN3fdGFDUfFiFE30Ps48RcUOnsQtQWbIkvA46t/k9HDD40N1WjZDza0+HgccreDkmLJooTHSymgm00vbM8LHSESYqgH1UKfEt2UOm1dm7EUmUHpDmdscMYfBqViYliIGTIZ24tuqBPDmDClNuGlCQluQ89N+EaJg8sPN+m3A12djsAsc/r37Fc0BNLSTDxjFLqruo7OHujdoKReWlGFys8qBBAmuuh9l0AnZt+S2bJzH4aisng+EwYzCdkCCeJiBsl3Yh7stTwnK91N2pW24FAy3IZui35N2b6r35rTMmf1yUAllJytlDwkpBPlMtcod8AChcjto82qfrsuZ81VdRaafCRMMkT4vWKnlTLaVekEEAeF84jZRjqOXUXWir7/QXO68qXK8+fzKyJzb3NaAAgYkK5Qya78DHkyBkZ+8d/l7aAbo/7yw5c76xtPSicrdj0kPB75eT15wr1TnjhowHDiw7b7SiVK1CW5qUMGiqw/hIkk4vzDOpBHE5jB/Uoa6EmnXc/Ci0XlBxhqbu074TjEqfc1lWvhwEEwni2wl3+xBC65SwqGGPsX+TsC48VgYlpmoYmYynuZWhkLstqfQ4E=
+  - secure: oOV7Z1S87tG6cdCSUdPpKZgDhkrDZvZas8h1/MB6MafH9cDm2AuDyEx0Dk3xQYXr1oStD5brIZ6qS3wiklQRaaBhqS1HHexxU6vLxLuTr2wfuhg6zneTIN6KHlmvUOzbB0jD1FI3FROVYlq/jL/x3PK3nA1qu69/PjX115EdhswACGQGJLjnGu4sSOHVegTd4xOxksG4XgDZIoZwvTMmb9GXxuXl9doUl6uaGhKR6hnC6Js3PM1uYduYdHan0OyEJRelR6ib5IYVqxkNQhXW8ZMo18/WOjBmTVedxqu4Z1eYpPIGMTUq5qsmcUwhtaN7jCvDmSmz96cqLJuzMt6iAOpMqWgIGFlZ3Dfi57nRlH6ePTc1jk2770axar2nRCzVq4BNzaUV9J5uHNSlKDDvVKuQoh9NRf+uJE807K+XnCE5Kz84pBKRBZ3nVydJ4MPfODiJTt8v1y7nSaNBFjVbzFvTRYNFj0JiPcW7r3Wnv3cpv6LVVIvSsdQUJHnPGeINQ599IH+0mt+S+iSljvCzUV43IMKgTlefwr9YbZHzFCslOh68RlYNMwAwCS42auFAhGRDKSViUDywudBwywMbxsxHxGP12TPoySgfS9i02tnHtMcTt9fxQEya7IfPorPav5xfxZFNJYSlwIH3vv8OwOA6qcpyIqZF7iVsbk6QxsU=
 install: true
 script: bash src/main/scripts/travis-build.bash
 notifications:
@@ -29,7 +31,7 @@ cache:
   - "$HOME/.m2"
 deploy:
   provider: releases
-  api_key:
+  api_key: 
   on:
     tags: true
     condition: "$TRAVIS_TAG =~ ^[0-9]+\\.[0-9]+\\.[0-9]+$"
