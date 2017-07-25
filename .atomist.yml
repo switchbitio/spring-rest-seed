@@ -51,3 +51,20 @@ editor:
     - "artifact": "lombok"
     - "version": "1.16.18"
 
+---
+kind: "operation"
+client: "com.atomist:rug"
+version: "1.0.0-20170715141010"
+editor:
+  name: "DependencyRemovalEditor"
+  group: "atomist"
+  artifact: "spring-team-handlers"
+  version: "0.7.8"
+  origin:
+    repo: "git@github.com:atomisthq/spring-team-handlers.git"
+    branch: "1e5401f1adbf17b3401d491f2b8d50a41d637c73"
+    sha: "1e5401f"
+  parameters:
+    - "group": "org.projectlombok"
+    - "artifact": "lombok"
+
